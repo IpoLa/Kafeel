@@ -14,15 +14,16 @@
         <button type="button" class="toggle-btn" onclick="register()">Register</button>
       </div>
       <!-- <center> -->
-      <div class="map-icon">
-        <img src="/static/img/map.png"
-      </div>
+      <!-- <div class="map-icon"> -->
+        <!-- <img src="/static/img/map.png" -->
+      <!-- </div> -->
       <!-- </center> -->
       <form id="login" class="input-group" method="post" action="">{% csrf_token %}
         <input type="text" class="input-field" placeholder="User Id" required>
         <input type="password" class="input-field" placeholder="Password" required>
         <input type="checkbox" class="checkbox"><span>Remember Password</span>
         <button type="submit" class="submit-btn">Log In</button>
+        <button type="reset" class="reset">Forget password</button>
       </form>
       <form id="register" class="input-group">
         <input type="text" class="input-field" placeholder="User Id" required>
@@ -35,7 +36,7 @@
   </div>
   <script>
     var x = document.getElementById("login");
-    var y = document.getElementById("register);
+    var y = document.getElementById("register");
     var z = document.getElementById("btn");
     function register(){
       x.style.left = "-400px";

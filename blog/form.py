@@ -9,6 +9,6 @@ class SignUpForm(forms.ModelForm):
         email = self.cleaned_data.get('email')
         email_base, provider = email.split("@")
         domain, extension = provider.split('.')
-        if not extension == "gov":
-            raise forms.ValidationError("Please enter .gov domain")
+        # if not extension == "gov":
+            # raise forms.ValidationError("Please enter .gov domain")
         return email

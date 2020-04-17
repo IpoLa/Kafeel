@@ -3,13 +3,13 @@ from __future__ import unicode_literals
 from django.shortcuts import render
 from .form import SignUpForm
 # Create your views here.
-def home(request):
-    title = "Hello guest !"
+def login(request):
+    # title = "Hello guest !"
     # if request.user.is_authenticated():
         # title = "Hello %s" %(request.user)
     form = SignUpForm()
     context = {
-        "template_title" : title,
+        # "template_title" : title,
         "form" : form
     }
-    return render(request, "home.html", context)
+    return render(request, "login.html", context)

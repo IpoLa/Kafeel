@@ -1,4 +1,4 @@
-@import url(PyDoctor/templates/home.html)
+@import url(HamoVid/templates/login.html)
 *{
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@
 .hero{
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(https://l.top4top.io/p_1556wimmj1.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(https://images.squarespace-cdn.com/content/v1/552cae96e4b07585523559dc/1428993380512-L3VPD4WBH48CK5DMAIJN/ke17ZwdGBToddI8pDm48kPTrHXgsMrSIMwe6YW3w1AZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0k5fwC0WRNFJBIXiBeNI5fKTrY37saURwPBw8fO2esROAxn-RKSrlQamlL27g22X2A/Dollar+Photo+Club+Teal+Square+Background.jpg);
   background-position: center;
   background-size: cover;
   position: absolute;
@@ -21,11 +21,12 @@
   padding: 5px;
   overflow: hidden;
 }
+
 .button-box{
   width: 220px;
   margin: 35px auto;
   position: relative;
-  box-shadow: 0 0 20px 9px #ff61241f;
+  box-shadow: 0 0 20px 9px #E0F7FA;
   border-radius: 30px;
 }
 
@@ -44,22 +45,12 @@
   position: absolute;
   width: 110px;
   height: 100%;
-  background: linear-gradient(to right, #ff105f, #ffad06);
+  background: linear-gradient(to right, #0033FF, #00FFFF);
   border-radius: 30px;
   transition: .5s;
 }
-.map-icon{
-  width: 30px auto;
-  text-align: center;
-}
-.map-icon img{
-  width: 30px;
-  margin: 0 12px;
-  box-shadow: 0 0 20px #7f7f7f3d;
-  border-radius: 50%;
-}
 .input-group{
-  top: 180px;
+  top: 160px;
   position: absolute;
   width: 280px;
   transition: .5s;
@@ -67,12 +58,12 @@
 .input-field{
   width: 100%;
   padding: 10px 0;
-  margin: 5px;
+  margin: 10px;
   border-left: 0;
   border-top: 0;
   border-bottom: 1px solid #999;
   border-right: 0;
-  background: transparent
+  background: transparent;
 }
 .submit-btn{
   width: 85%;
@@ -80,7 +71,7 @@
   cursor: pointer;
   display: block;
   margin: auto;
-  background: linear-gradient(to right, #ff105f, #ffad06);
+  background: linear-gradient(to right, #0033FF, #00FFFF);
   border: 0;
   outline: none;
   border-radius: 30px;
@@ -93,6 +84,14 @@
   font-size: 12px;
   bottom: 68px;
   position: absolute;
+}
+.reset{
+  top: 300px;
+  padding: inherit;
+  border: 0;
+  width: 100px;
+  margin: 10px;
+  background: transparent;
 }
 #login{
   left: 50px;
