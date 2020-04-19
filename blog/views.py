@@ -13,7 +13,7 @@ from .form import SignUpForm
 #         "form" : form
     # }
     # return render(request, "login.html", context)
-def home(request):
+def login(request):
     if request.user.is_authenticated():
             form = SignUpForm()
             context = {
