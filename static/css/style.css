@@ -1,4 +1,5 @@
 @import url(HamoVid/templates/login.html)
+@import url(HamoVid/templates/home.html)
 *{
   margin: 0;
   padding: 0;
@@ -98,4 +99,72 @@
 }
 #register{
   left: 450px;
+}
+
+
+.main-menu-area{}
+.logo{
+  margin-top: 100px;
+  width: 30px;
+  margin: 0 10px;
+  top: 0;
+  transition: .5s;
+  height: 100%;
+  position: fixed;
+  text-align: left;
+}
+a{
+  color: #444444;
+}
+.logo{
+  position: fixed;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+}
+.main-menu{}
+.main-menu ul{}
+.main-menu ul li{
+  display: inline-block;
+}
+.main-menu ul li a{
+  color: #444444;
+  font-weight: 700;
+  padding: 30px 20px;
+  text-transform: uppercase;
+}
+.signle-slider{
+  height: 100vh;
+}
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 11;
+}
+.table-cell h1{
+  color: #ffffff;
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 60px;
+}
+.table-cell p{
+  color: #ffffff;
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.table-cell{
+  display: table-cell;
+  vertical-align: middle;
+}
+.slider-title{
+  display: table;
+  height: 100%;
+  text-align: center;
+  width: 100%;
 }
