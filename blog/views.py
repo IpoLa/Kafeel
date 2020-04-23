@@ -19,7 +19,7 @@ def login(request):
             context = {
             "form" : form
             }
-            return render(request, "home.html",context)
+            return render(request, "hamovid.html",context)
     if not request.user.is_authenticated():
         form = SignUpForm()
         context = {

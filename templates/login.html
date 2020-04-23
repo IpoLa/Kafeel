@@ -3,33 +3,33 @@
 <!-- {% load staticfiles %} -->
 <head>
   <title>Login Page</title>
-  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/style-login.css">
 </head>
 <body>
   <div class="hero">
     <div class="form-box">
       <div class="button-box">
         <div id="btn"></div>
-        <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+        <button type="button" class="toggle-btn" onclick="login()">Log In</button>
         <button type="button" class="toggle-btn" onclick="register()">Register</button>
       </div>
-      <!-- <center> -->
-      <!-- <div class="map-icon"> -->
-        <!-- <img src="/static/img/map.png" -->
-      <!-- </div> -->
-      <!-- </center> -->
+      <div class="social-icons">
+        <img src="/static/img/facebook.png" alt="">
+        <img src="/static/img/instagram.png" alt="">
+        <img src="/static/img/twitter.png" alt="">
+      </div>
       <form id="login" class="input-group" method="post" action="">{% csrf_token %}
-        <input type="text" class="input-field" placeholder="User Id" required>
+        <input type="text" class="input-field" placeholder="Email" required>
         <input type="password" class="input-field" placeholder="Password" required>
-        <input type="checkbox" class="checkbox"><span>Remember Password</span>
+        <input type="checkbox" class="check-box"><span>Remember Password</span>
         <a href="/templates/home.html"><button type="submit" class="submit-btn">Log In</button></a>
         <button type="reset" class="reset">Forget password</button>
       </form>
       <form id="register" class="input-group">
-        <input type="text" class="input-field" placeholder="User Id" required>
+        <input type="text" class="input-field" placeholder="User Name" required>
         <input type="email" class="input-field" placeholder="Email" required>
         <input type="password" class="input-field" placeholder="Enter Password" required>
-        <input type="checkbox" class="checkbox"><span>I agree to the terms & conditions</span>
+        <input type="checkbox" class="chech-box"><span2>I agree to the terms & conditions</span2>
         <button type="submit" class="submit-btn">Register</button>
       </form>
     </div>

@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HamoVid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="/static/css/style-hamovid.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
+        </div>
+      </nav>
+      <!-- <a href="#" class="logo"><img class="logo" src="/static/img/logo.png" alt=""></a> -->
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#" class="nav-link active">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- Sayie lheader hna -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <h1 class="headline headline-dark">
+        Welcome To
+      </h1>
+      <h1 class="headline">KAFEEL</h1>
+      <div class="headline-description">
+        <div class="separator">
+          <div class="line line-left"></div>
+          <div class="line line-left"></div>
+        </div>
+        <div class="single-animation">
+          <h5>Ready to be a member ?</h5>
+          <a href="#" class="btn cta-btn">Join Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero ends -->
+  <section>
+    <div class="discover-our-platform">
+      <div class="container">
+        <div class="info">
+          <div class="description padding-right animate-left">
+            <div class="global-headline">
+              <h1 class="headline headline-dark">
+                Discover
+              </h1>
+              <h1 class="headline headline-dark">Our Platform</h1>
+            </div>
+            <p>
+              Definition:
+               KaFeeL is the platform that brings a whole new meaning to charity,
+               organizing both needs and donations,
+                with the team's dedication to improve the process of giving for the greater good,
+                 the platform is made to make all processes as smooth and fast as it can be.
+            </p>
+            <a href="#" class="btn body-btn">About Us</a>
+          </div>
+          <div class="img-info animate-right">
+            <img src="/static/img/6.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- about ends -->
+  <section class="about">
+    <div class="container">
+      <div class="about-us">
+        <div class="image-groupe padding-right animate-left">
+          <img src="/static/img/h.png" alt="">
+        </div>
+        <div class="us animate-right">
+          <div class="global-headline">
+            <h1 class="headline headline-dark">
+              About
+            </h1>
+            <h1 class="headline headline-dark">Us</h1>
+          </div>
+          <p>
+team of engineers and designers that,
+ inspired by charity,
+dedicated a platform to ease the process of charity,
+ making both the ones in need and the generous donors comfortable with the process,
+ helping move the charity a step forward.
+          </p>
+          <center><a href="#" class="btn body-btn">Contact Us</a></center>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- About Us end -->
+  <footer>
+    <div class="container">
+      <div class="back-to-top">
+        <a href="#hero"><i class="fas fa-chevron-up"></i></a>
+      </div>
+      <div class="footer-content">
+        <div class="footer-content-about animate-top">
+          <h4>Contact Us</h4>
+          <!-- <div class="asterisk"><i class="fas fa-asterisk"></i></div> -->
+          <p>
+            From any of this social websites
+          </p>
+        </div>
+        <div class="footer-content-divider animate-bottom">
+          <div class="social-menu">
+            <h4>& Follow</h4>
+            <ul class="social-icons">
+              <a href="https://twitter.com/kafee_l"><i class="fab fa-twitter"></i></a>
+            </ul>
+            <ul class="social-icons">
+              <a href="https://www.facebook.com/kafeel2020"><i class="fab fa-facebook-square"></i></a>
+            </ul>
+            <ul class="social-icons">
+              <a href="https://www.instagram.com/kafeel.platform/"><i class="fab fa-instagram"></i></a>
+            </ul>
+          </div>
+          <div class="newsletter-container">
+            <h4>Newsletter</h4>
+            <form class="newsletter-form" action="#" method="post">
+              <input type="text" class="newsletter-input" placeholder="Your Email">
+              <button type="submit" class="newsletter-btn">
+                <i class="fas fa-envelope"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  //Select element function
+  const selectElement = function(element) {
+    return document.querySelector(element)
+  };
+
+  let menuToggler = selectElement('.menu-toggle');
+  let body = selectElement('body');
+
+  menuToggler.addEventListener('click', function() {
+    body.classList.toggle('open');
+  });
+
+  <!-- Scroll -->
+  window.sr = ScrollReveal();
+
+  sr.reveal('.animate-left', {
+    origin: 'left',
+    duration: 1000,
+    distance: '25rem',
+    delay: 300
+  });
+
+  sr.reveal('.animate-right', {
+    origin: 'right',
+    duration: 1000,
+    distance: '25rem',
+    delay: 300
+  });
+
+  sr.reveal('.animate-top', {
+    origin: 'top',
+    duration: 1000,
+    distance: '25rem',
+    delay: 300
+  });
+
+  sr.reveal('.animate-bottom', {
+    origin: 'bottom',
+    duration: 1000,
+    distance: '25rem',
+    delay: 300
+  });
+</script>
+</body>
+</html>

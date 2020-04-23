@@ -1,21 +1,11 @@
-(function ($) {
-"use strict";
+//Select element function
+const selectElement = function(element) {
+  return document.querySelector(element)
+};
 
-$('.slider-active').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    }
-})
+let menuToggler = selectElement('.menu-toggle');
+let body = selectElement('body');
 
-})(jQuery);
+menuToggler.addEventListener('click', function() {
+  body.classList.toggle('open');
+});
