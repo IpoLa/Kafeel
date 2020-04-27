@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<h1>Searched for : {{ query }}</h1>
+
+{{ products }}
+
+<table class="table">
+  <thead>
+    <th></th>
+    <th>Product</th>
+  </thead>
+</table>
+
+<tbody>
+  {% for product in products %}
+  <tr>
+    <td style>
+      Image
+      </td>
+      <td>
+        <a href='{{ product.get_absolute_url }}'>
+      {{ Product }}</a>
+    </td>
+  </tr>
+  {% endfor %}
+</tbody>
+
+{% endblock %}

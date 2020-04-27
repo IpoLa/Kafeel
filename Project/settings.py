@@ -27,7 +27,7 @@ SECRET_KEY = 'a4##y-@hapz)u^*=wi+w3dr6+nd-q^u=*iihtu0bx7if(!284&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'Products',
 ]
 
 MIDDLEWARE = [
@@ -119,9 +120,17 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/'
+# STATIC_URL = '/static/'
+# MEDIA_URL = '/'
+# MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "media")
+  # MEDIA_ROOT = '/home/ipola/HamoVid/static/media/'
+  # STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "HamoVid/static", "")
+# STATIC_ROOT = '/home/ipola/HamoVid/static/'
 STATICFILES_DIRS = (
     ('css', os.path.join(STATIC_ROOT , 'css')),
     ('js', os.path.join(STATIC_ROOT , 'js')),

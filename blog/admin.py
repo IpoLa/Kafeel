@@ -8,6 +8,7 @@ from .models import SignUp
 # from .form import SignUpForm
 
 class SignUpAdmin(admin.ModelAdmin):
+    search_fields = ['full_name', 'email']
     list_display = ["_unicode_", "full_name", "timestamp", "updated"]
     # form = SignUpForm
     class Meta:

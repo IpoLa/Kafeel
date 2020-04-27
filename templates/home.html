@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head_title %}
+Welcome to
+{% endblock %}
+
+{% block styles %}
+  .jumbotron{
+    color: red;
+  }
+{% endblock %}
+
+{% block jQuery %}
+<!-- alert("welcome"); -->
+{% endblock %}
+
+
+{% block jumbotron2 %}
+
+<div class="container">
+      <div class="jumbotron">
+            <a class="btn btn-lg btn-primary" href="https://getbootstrap.com/docs/4.1/components/navbar/" role="button">View navbar docs &raquo;</a>
+      </div>
+</div>
+{% endblock %}
+
+{% block content %}
+  {% include 'post.html' %}
+
+<div class="row">
+
+  {% for product in products %}
+    <div class="col-sm-4">
+
+
+        <div class="thumbnail">
+                {% if product.productimage_set.all %}
+                      {% for item in product.productimage_set.all %}
+                          {% if item.featured %}
+                          <div style="
+                          width:200px;
+                          height:200px;
+                          background-image:url('{{ MEDIA_URL }}{{ item.image }}');
+                          background-repeat: no-repeat;
+                          background-position: center;
+                          background-size: cover;
+                          margin: 0 auto;">
+
+                          </div>
+                          <!-- <img class="img-responsive" src="{{ MEDIA_URL }}{{ item.image }}" /> -->
+                          {% endif %}
+                      {% endfor %}
+                {% else %}
+                    <img class="img-responsive" src='{{ MEDIA_URL }}{{ item.image }}' />
+                {% endif %}
+            <div class="caption">
+            <a href='{{ product.get_absolute_url }}'><h3>{{ product.title }}</h3></a>
+            <p>{{ product.description|truncatewords:15 }}</p>
+            <p><a href="#" class="btn btn-primary" role="button">View</a>&nbsp;<a href="#"
+            class="btn btn-info" role="button">Contact</a></p>
+            </div>
+        </div>
+
+
+
+      <a href='{{ product.get_absolute_url }}'></a>
+
+
+    </div>
+  {% cycle "" "" "" "</div><br/><hr/><div class='row'>" %}
+
+  {% endfor %}
+</div>
+<!-- </div> -->
+
+{% endblock %}
